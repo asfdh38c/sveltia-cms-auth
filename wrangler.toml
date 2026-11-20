@@ -1,3 +1,9 @@
 name = "sveltia-cms-auth"
 main = "src/index.js"
 compatibility_date = "2026-11-11"
+
+# Kept here so a deploy from this repo does not drop them. GITHUB_CLIENT_SECRET
+# stays a secret in the Cloudflare dashboard; deploys leave secrets alone.
+[vars]
+ALLOWED_DOMAINS = "staging.redwren.app, redwren.app"
+GITHUB_CLIENT_ID = "Iv23li6JCeo5Mwo76ksy"
